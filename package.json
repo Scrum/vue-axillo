@@ -1,0 +1,64 @@
+{
+  "name": "vue-axillo",
+  "version": "0.0.0",
+  "description": "Composable Axios for REST API with query notation GraphQL",
+  "license": "MIT",
+  "repository": "Scrum/vue-axillo",
+  "bugs": "Scrum/vue-axillo/issues",
+  "author": {
+    "name": "Ivan Demidov",
+    "email": "Scrum@list.ru",
+    "url": "https://twitter.com/Scrum_"
+  },
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
+    "prepare": "npm run build",
+    "build": "rimraf lib && babel src -d lib",
+    "test": "xo && nyc ava",
+    "pretest": "clinton"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "vue",
+    "axios",
+    "rest",
+    "api",
+    "graphql",
+    "composable"
+  ],
+  "dependencies": {
+    "axios": "^0.20.0",
+    "rexios": "0.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
+    "ava": "^3.12.1",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-preset-minify": "^0.5.1",
+    "clinton": "^0.14.0",
+    "conventional-changelog-cli": "^2.1.0",
+    "husky": "^4.3.0",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.0",
+    "vue": "^3.0.0",
+    "xo": "^0.33.1"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/scrums"
+  }
+}

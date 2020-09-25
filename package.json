@@ -1,6 +1,6 @@
 {
   "name": "vue-axillo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Composable Axios for REST API with query notation GraphQL",
   "license": "MIT",
   "repository": "Scrum/vue-axillo",
